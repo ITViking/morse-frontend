@@ -1,0 +1,10 @@
+{
+    "name": "Morse-frontend",
+    "scripts": {
+        "dev": "nuxt"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "nuxt": "^2.4.5"
+    }
+}
