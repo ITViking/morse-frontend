@@ -23,3 +23,7 @@ https://webpack.js.org/
 Clone the repo. Via termnial, enter the repo. When in the repo enter npm run dev.
 
 The terminal should tell you where to access the website.
+
+Please note that it wont work until you fire up the backend, which
+
+can be found here: https://github.com/ITViking/morse-service
