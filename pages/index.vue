@@ -22,11 +22,10 @@
         },
         methods: {
             setupStream() {
-                let source = new EventSource('http://localhost:5000/messages');
+                let source = new EventSource('http://10.233.146.25:5000/messages');
 
                 source.onerror = function(event) {
                     console.log("closed the connection");
-                    source.close();
                 };
                 source.onmessage = (event) => {
                     this.data.push(JSON.parse(event.data));
@@ -34,7 +33,7 @@
             },
         },
         async mounted() {
-            await axios.get('http://localhost:5000').then(response => {
+            await axios.get('http://10.233.146.25:5000').then(response => {
                 console.log(this.data);
                 this.data = response.data;
             });
